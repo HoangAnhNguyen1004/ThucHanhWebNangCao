@@ -1,0 +1,129 @@
+:root {
+  /* Pink Theme Color Tokens */
+  --primary: #ec4899;
+  --primary-hover: #db2777;
+  --primary-active: #be185d;
+  --primary-light: #fdf2f8;
+  --primary-subtle: #fce7f3;
+  --primary-border: #fbcfe8;
+
+  /* Vibrant Pink & Rose Gradients */
+  --primary-gradient: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #db2777 100%);
+  --rose-gradient: linear-gradient(135deg, #fb7185 0%, #f43f5e 50%, #e11d48 100%);
+  --sweet-gradient: linear-gradient(135deg, #fda4af 0%, #f472b6 50%, #ec4899 100%);
+  --pastel-banner-gradient: linear-gradient(135deg, #fff1f2 0%, #fdf2f8 50%, #fce7f3 100%);
+
+  /* Accents */
+  --rose: #f43f5e;
+  --rose-hover: #e11d48;
+  --rose-light: #fff1f2;
+
+  --emerald: #10b981;
+  --emerald-light: #ecfdf5;
+
+  --amber: #f59e0b;
+  --amber-light: #fffbeb;
+
+  /* Typography Colors */
+  --text-primary: #3b0764;      /* Deep violet/wine for crisp readable contrast */
+  --text-heading: #831843;      /* Deep ruby rose */
+  --text-secondary: #701a75;    /* Medium plum */
+  --text-muted: #9d4edd;        /* Subtle lavender rose */
+  --text-body: #4c1d95;
+
+  /* Backgrounds */
+  --bg-page: #fff5f7;           /* Very soft blush pink */
+  --bg-surface: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-input: #fff1f2;
+
+  /* Borders */
+  --border-subtle: #fce7f3;
+  --border-pink: #fbcfe8;
+  --border-pink-focus: #f472b6;
+
+  /* Shadows with Pink Glow */
+  --shadow-xs: 0 1px 3px rgba(236, 72, 153, 0.08);
+  --shadow-sm: 0 2px 6px rgba(236, 72, 153, 0.08);
+  --shadow-md: 0 6px 16px -2px rgba(236, 72, 153, 0.12), 0 2px 6px -1px rgba(0, 0, 0, 0.03);
+  --shadow-lg: 0 12px 24px -4px rgba(236, 72, 153, 0.16), 0 4px 8px -2px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 20px 30px -6px rgba(236, 72, 153, 0.22);
+  --shadow-pink-glow: 0 8px 20px rgba(236, 72, 153, 0.35);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Typography */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Reset & Base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+  outline: none;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input {
+  font-family: inherit;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Custom Pink Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff1f2;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f472b6;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ec4899;
+}
