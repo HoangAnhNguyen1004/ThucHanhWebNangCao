@@ -1,0 +1,53 @@
+.container {
+  width: 800px;
+  margin: 40px auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.menu button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.product-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.product h2 {
+  margin: 0 0 10px;
+}
+
+.product p {
+  margin: 0;
+}
+
+.product button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.empty {
+  text-align: center;
+  margin-top: 30px;
+}
